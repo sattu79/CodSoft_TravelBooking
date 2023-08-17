@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(Img/Flight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgb(6, 6, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 45px;
+    color: rgb(238, 10, 185);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: monotype corsiva;
+}
+
+.navbar {
+    display: inline;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    font-size: 18px;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+    text-align: center;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    background-color: red;
+    color: black;
+    text-decoration: underline;
+}
+
+.search {
+    float: right;
+}
+
+.search button {
+    background-color: transparent;
+    color: #fff;
+    float: right;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    height: 60vh;
+    width: 50vh;
+    align-items: center;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+    margin-left: 30vh;
+    background-color: rgb(6, 6, 34);
+    color: #fff;
+    border: 1px solid black;
+}
+
+.top {
+    margin: 0;
+    padding: 0px;
+    border-radius: 0%;
+    background-color: transparent;
+}
+
+form {
+    text-align: left;
+}
+
+.radio-btn {
+    margin: 20px;
+}
+
+.radio-btn .btn {
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+
+.radio-btn .btn::after {
+    content: '';
+    height: 20px;
+    width: 20px;
+    top: -2px;
+    left: -1px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.check-btn .btn1 {
+    font-size: 20px;
+    border: none;
+    margin: 5px 5px 5px 0;
+}
+
+.booking {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+.booking input {
+    width: 20%;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 0px;
+    margin: 8px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.booking select {
+    width: 10%;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 0px;
+    margin: 8px;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.booking-info {
+    padding: 20px;
+    margin: 0 5px;
+}
+
+.booking label {
+    font-size: 18px;
+    line-height: 60px;
+    justify-content: space-around;
+    padding: 5px 5px 5px 5px;
+    align-items: left;
+    color: #ccc;
+    margin: 10px 15px 0 0;
+}
+
+.booking-info .btn1 {
+    font-size: 20px;
+    border: none;
+    margin: 5px 5px 5px 0;
+}
+
+.info {
+    display: inline;
+    height: 10vh;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.info label {
+    font-size: 18px;
+    line-height: 60px;
+    justify-content: space-around;
+    padding: 5px 5px 5px 10px;
+    align-items: left;
+    color: #ccc;
+    margin: 10px 15px 0 0;
+}
+
+.info input {
+    width: 15%;
+    height: 5vh;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 18px;
+    padding: 3px;
+}
+
+.info1 .btn {
+    background-color: rgb(247, 38, 160);
+    border-radius: 0%;
+    color: white;
+    padding: 10px;
+    float: right;
+    margin: 10px;
+}
+
+.info1 .btn:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.slider {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    margin-top: 5px;
+    height: 250px;
+    padding: 15px;
+}
+
+.slider img {
+    width: 16%;
+    height: 200px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 105vh;
+    width: auto;
+    padding: 16px;
+    margin-top: -30px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+footer {
+    padding: 90px;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(10, 142, 142);
+    background-color: #ccc;
+}
+
+footer:hover {
+    color: red;
+}

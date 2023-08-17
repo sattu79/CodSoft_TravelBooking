@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Travel Booking System</title>
+    <link rel="stylesheet" href="Travel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Sky Booking</a>
+        <nav class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">BLOG</a>
+            <a href="#">PAGES</a>
+            <a href="#">SERVICES</a>
+            <a href="#">CONTACTS</a>
+
+            <div class="search">
+                <button>
+                    <i class="fa fa-search" style="font-size: 18px;">
+                    </i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <form>
+            <div class="top">
+                <div class="btn btn-dark fw-bold">Flights</div>
+                <div class="btn btn-primary fw-bold">Hotels</div>
+                <div class="btn btn-primary fw-bold">Car Hire</div>
+            </div>
+
+            <div class="radio-btn">
+                <input type="radio" class="btn" name="check">Round Trip
+                <input type="radio" class="btn" name="check">One Way
+                <input type="radio" class="btn" name="check">Multi-city
+                <div class="check-btn">
+                    <input type="checkbox" class="btn1">Direct Flights Only
+                </div>
+            </div>
+
+            <div class="booking">
+                <label>From</label>
+                <input type="text" class="place" placeholder="City">
+                <label>To</label>
+                <input type="text" class="place" placeholder="City">
+                <label>Cabin Class</label>
+                <select>
+                    <option value="Economy">Economy</option>
+                    <option value="Executive">Executive</option>
+                    <option value="First">First</option>
+                </select>
+            </div>
+
+            <div class="info">
+                <label>Departing</label>
+                <input type="date" class="Selectdate" placeholder="dd/mm/yyyy">
+                <label>Return</label>
+                <input type="date" class="Selectdate" placeholder="dd/mm/yyyy">
+                <label>Adults(16+)</label>
+                <input type="number" class="num" placeholder="0">
+                <label>Children</label>
+                <input type="number" class="num" placeholder="0">
+            </div>
+
+            <div class="booking-info">
+                <input type="checkbox" class="btn1">Add Nearby Airports
+            </div>
+
+            <div class="info1">
+                <button class="btn">SEARCH FLIGHTS</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="slider">
+        <img src="Img/Emirates.jpg">
+        <img src="Img/AirFrance.jpg">
+        <img src="Img/British.jpg">
+        <img src="Img/Qatar.jpg">
+        <img src="Img/Simgapore.jpg">
+        <img src="Img/Turkish.jpg">
+        <div class="sli_btn">
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+    </div>
+
+    <footer>
+        <h5>Why people choose Us</h5>
+    </footer>
+</body>
+</html>
